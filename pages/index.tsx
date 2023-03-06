@@ -19,8 +19,6 @@ import resume from "../public/resume.png"
 import simulut from "../public/simulut.png"
 
 import { useState } from 'react';
-import type { AppProps } from 'next/app';
-import { Analytics } from '@vercel/analytics/react';
 
 
 
