@@ -207,7 +207,7 @@ Please feel free to explore my repositories and connect with me on LinkedIn!
               <div className=' flex gap-14 lg:gap-20 justify-center flex-wrap'>
 
                 <div className="w-64 overflow-hidden shadow-lg rounded-2xl h-90 mb-8 dark:bg-gray-600">
-                          <Image src={spotify} className="rounded-lg object-cover" layout="responsive"/>
+                          <Image src={spotify} className="rounded-lg object-cover" width={'150%'} height={'100%'} layout="responsive"/>
                               <div className="relative w-full p-4 dark:bg-gray-600 bg-white">
                               <button aria-label="Go to article" type="button" className="absolute w-12 h-12 text-white bg-red-500 rounded-full left-12 -top-6">
                                   <AiFillHeart width="18"  height="18" fill="currentColor" className="w-5 h-5 mx-auto text-white"/>
@@ -221,7 +221,7 @@ Please feel free to explore my repositories and connect with me on LinkedIn!
                                       Spotify Data Analysis
                                   </p>
                                   <p className="text-xs dark:text-gray-300 text-gray-600">
-                                    Spotify&apos;s data exploration using both supervised and unsupervised learning methods
+                                    Spotify's data exploration using both supervised and unsupervised learning methods
                                   </p>
                                   <div className="flex flex-wrap items-center mt-6 justify-starts">
                                       <div className="text-xs mb-2 mr-2 py-1.5 px-4 text-gray-600 bg-green-200 rounded-2xl">
