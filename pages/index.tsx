@@ -19,6 +19,9 @@ import resume from "../public/resume.png"
 import simulut from "../public/simulut.png"
 
 import { useState } from 'react';
+import type { AppProps } from 'next/app';
+import { Analytics } from '@vercel/analytics/react';
+
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -71,7 +74,7 @@ export default function Home() {
 
               My name is Louise Lizé, and I am a computer science student engineer with a specialization in AI and Data Science 📈.
 
-Although I am originally studying at the French engineering university UTC, I am currently pursuing a double degree program at UQAC in Canada, which has allowed me to expand my horizons and gain a unique perspective on my field of study.
+Although I am originally studying at French engineering university <a href='https://www.utc.fr/' target="_blank" rel="noreferrer" className='text-teal-600'>UTC</a>, I am currently pursuing a double degree program at <a href='https://www.uqac.ca/' target="_blank" rel="noreferrer" className='text-teal-600'>UQAC</a> in Canada, which has allowed me to expand my horizons and gain a unique perspective on my field of study.
 
 As I look ahead to my future career, I am eager to gain industry experience through a 6-month internship starting in September 2023, with a preference for opportunities located in Montreal. However, I am also open to exploring opportunities elsewhere in the world. 🔭
 
