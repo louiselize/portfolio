@@ -352,7 +352,7 @@ Please feel free to explore my repositories and connect with me on LinkedIn!
                                     <br></br><br></br>
                                     <b>6-month</b> internship at <span className='text-blue-700 dark:text-blue-300'>Olvid</span>, french start-up specialized in providing highly secure messaging services. 
                                     <br></br>
-                                    Creation of a web application for company admins. The app was designed to allow the administrators of Olvid's client companie to create and manage groups, add or remove workers, configure settings, restrict visibility, and revoke keys as needed.
+                                    Creation of a web application for company admins. The app was designed to allow the administrators of Olvid`&apos;s client companie to create and manage groups, add or remove workers, configure settings, restrict visibility, and revoke keys as needed.
                                   </p>
                                   <div className="flex flex-wrap items-center mt-6 justify-starts">
                                       <div className="text-xs mb-2 mr-2 py-1.5 px-4 text-gray-600 bg-green-200 rounded-2xl">
