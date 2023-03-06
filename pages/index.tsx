@@ -241,7 +241,7 @@ Please feel free to explore my repositories and connect with me on LinkedIn!
                 </div>
                 
                 <div className="w-64 overflow-hidden shadow-lg rounded-2xl h-90 mb-8 dark:bg-gray-600">
-                          <Image src={metropolIA} className="rounded-lg object-cover" layout="responsive"/>
+                          <Image src={metropolIA} className="rounded-lg object-cover" width={'150%'} height={'100%'} layout="responsive"/>
                               <div className="relative w-full p-4 dark:bg-gray-600 bg-white">
                                   <p className="dark:text-white mt-2 mb-2 text-xl font-medium text-gray-800">
                                       IA Serious Game
