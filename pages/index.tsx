@@ -221,7 +221,7 @@ Please feel free to explore my repositories and connect with me on LinkedIn!
                                       Spotify Data Analysis
                                   </p>
                                   <p className="text-xs dark:text-gray-300 text-gray-600">
-                                    Spotify's data exploration using both supervised and unsupervised learning methods
+                                    Spotify&apos;s data exploration using both supervised and unsupervised learning methods
                                   </p>
                                   <div className="flex flex-wrap items-center mt-6 justify-starts">
                                       <div className="text-xs mb-2 mr-2 py-1.5 px-4 text-gray-600 bg-green-200 rounded-2xl">
