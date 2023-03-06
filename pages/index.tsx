@@ -3,7 +3,8 @@ import Image from 'next/legacy/image'
 import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
 import {BsAlignCenter, BsMoonStarsFill} from 'react-icons/bs'
-import {AiFillGithub, AiFillLinkedin, AiFillYoutube, AiFillHeart} from 'react-icons/ai'
+import {HiMagnifyingGlass} from 'react-icons/hi2'
+import {AiFillGithub, AiFillLinkedin, AiFillYoutube, AiFillHeart, AiOutlineLink} from 'react-icons/ai'
 import {IoIosPaper} from 'react-icons/io'
 import chess from "../public/chessAI.png"
 import avatar from "../public/avatar.png"
@@ -13,6 +14,9 @@ import spotify from "../public/spotify.jpg"
 import metropolIA from "../public/metropolIA.png"
 import monnAI from "../public/monnAI.png"
 import unity from "../public/unity.png"
+import olvid from "../public/olvid.jpg"
+import resume from "../public/resume.png"
+import simulut from "../public/simulut.png"
 
 import { useState } from 'react';
 
@@ -136,7 +140,6 @@ Please feel free to explore my repositories and connect with me on LinkedIn!
                                   </div>
                               </div>
                 </div>
-                
                 
                 <div className="w-64 overflow-hidden shadow-lg rounded-2xl h-90 mb-8 dark:bg-gray-600">
                           <Image src={vaccum} className="rounded-lg object-cover"  layout="responsive"/>
@@ -317,6 +320,122 @@ Please feel free to explore my repositories and connect with me on LinkedIn!
                                       </div>
                                       <div className="text-xs mb-2 py-1.5 px-4 text-gray-600 bg-red-200 rounded-2xl">
                                           #NeuralNetworks
+                                      </div>
+                                  </div>
+                              </div>
+                </div>
+              </div>
+            </div>
+
+            
+          <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-gray-700">
+              <h3 className='mb-5 text-4xl text-gray-800 dark:text-white'>
+                Web Development
+              </h3>
+
+              
+              <div className='flex flex-wrap justify-center gap-14 lg:gap-20'>
+
+                <div className="w-96 overflow-hidden shadow-lg rounded-2xl h-90 mb-8 dark:bg-gray-600">
+                          <Image src={olvid} className="rounded-lg object-cover"  layout="responsive"/>
+                              <div className="relative w-full p-4 dark:bg-gray-600 bg-white">
+                              <a href='https://www.olvid.io/faq/console-d-administration-olvid/' target="_blank" rel="noreferrer">
+                              <button aria-label="Go to article" type="button" className="absolute w-12 h-12 text-white bg-gray-700 rounded-full right-12 -top-7">
+                                  <HiMagnifyingGlass width="20"  height="20" fill="currentColor" className="w-6 h-6 mx-auto text-white"/>
+                                  </button>
+                                </a>
+                                <p className="dark:text-white mb-2 text-xl font-medium text-gray-800">
+                                    Full Stack Developer Intern
+                                  </p>
+                                  <p className="text-xs dark:text-gray-300 text-gray-600">
+                                  <span className='text-gray-600 italic font-thin dark:text-gray-300'>  Sept. 2021 - Feb. 2022 </span>
+                                    <br></br><br></br>
+                                    <b>6-month</b> internship at <span className='text-blue-700 dark:text-blue-300'>Olvid</span>, french start-up specialized in providing highly secure messaging services. 
+                                    <br></br>
+                                    Creation of a web application for company admins. The app was designed to allow the administrators of Olvid's client companie to create and manage groups, add or remove workers, configure settings, restrict visibility, and revoke keys as needed.
+                                  </p>
+                                  <div className="flex flex-wrap items-center mt-6 justify-starts">
+                                      <div className="text-xs mb-2 mr-2 py-1.5 px-4 text-gray-600 bg-green-200 rounded-2xl">
+                                          #VueJS
+                                      </div>
+                                      <div className="text-xs mb-2 mr-2 py-1.5 px-4 text-gray-600 bg-green-200 rounded-2xl">
+                                          #Java
+                                      </div>
+                                      <div className="text-xs mb-2 mr-2 py-1.5 px-4 text-gray-600 bg-green-200 rounded-2xl">
+                                          #BootsrapVue
+                                      </div>
+                                      <div className="text-xs mb-2 mr-2 py-1.5 px-4 text-gray-600 bg-green-200 rounded-2xl">
+                                          #GitLab
+                                      </div>
+                                      <div className="text-xs mb-2 mr-2 py-1.5 px-4 text-gray-600 bg-green-200 rounded-2xl">
+                                          #Liquibase
+                                      </div>
+                                      <div className="text-xs mb-2 mr-2 py-1.5 px-4 text-gray-600 bg-green-200 rounded-2xl">
+                                          #Keycloak
+                                      </div>
+                                  </div>
+                              </div>
+                </div>
+                
+              
+              </div>
+              
+              <div className='flex flex-wrap justify-center gap-14 lg:gap-20'>
+
+                <div className="w-64 overflow-hidden shadow-lg rounded-2xl h-90 mb-8 dark:bg-gray-600">
+                          <Image src={resume} className="rounded-lg object-cover"  layout="responsive"/>
+                              <div className="relative w-full p-4 dark:bg-gray-600 bg-white">
+                              <a href='https://louiselize.github.io/#' target="_blank" rel="noreferrer">
+                              <button aria-label="Go to article" type="button" className="absolute w-12 h-12 text-white bg-gray-700 rounded-full right-12 -top-7">
+                                  <AiOutlineLink width="20"  height="20" fill="currentColor" className="w-6 h-6 mx-auto text-white"/>
+                                  </button>
+                                </a>
+                                <p className="dark:text-white mb-2 text-xl font-medium text-gray-800">
+                                      Resume Website
+                                  </p>
+                                  <p className="text-xs dark:text-gray-300 text-gray-600">
+                                  I took on this project as my first personal venture, with the goal of improving my skills and having fun along the way.
+                                  </p>
+                                  <div className="flex flex-wrap items-center mt-6 justify-starts">
+                                      <div className="text-xs mb-2 mr-2 py-1.5 px-4 text-gray-600 bg-green-200 rounded-2xl">
+                                          #VueJS
+                                      </div>
+                                      <div className="text-xs mb-2 mr-2 py-1.5 px-4 text-gray-600 bg-green-200 rounded-2xl">
+                                          #BootstrapVue
+                                      </div>
+                                      
+                                      <div className="text-xs mb-2 py-1.5 px-4 text-gray-600 bg-amber-200 rounded-2xl">
+                                          #PersonalProject
+                                      </div>
+                                  </div>
+                              </div>
+                </div>
+                
+                <div className="w-64 overflow-hidden shadow-lg rounded-2xl h-90 mb-8 dark:bg-gray-600">
+                          <Image src={simulut} className="rounded-lg object-cover"  layout="responsive"/>
+                              <div className="relative w-full p-4 dark:bg-gray-600 bg-white">
+                              <a href='http://www.utc.fr/si28/ProjetsUpload/P2021_si28p003/index.html' target="_blank" rel="noreferrer">
+                              <button aria-label="Go to article" type="button" className="absolute w-12 h-12 text-white bg-gray-700 rounded-full right-12 -top-7">
+                                  <AiOutlineLink width="20"  height="20" fill="currentColor" className="w-6 h-6 mx-auto text-white"/>
+                                  </button>
+                                </a>
+                                  <p className="dark:text-white mb-2 text-xl font-medium text-gray-800">
+                                      Simul&apos;UT
+                                  </p>
+                                  <p className="text-xs dark:text-gray-300 text-gray-600">
+                                  Creating an interactive and multimedia project. 
+                                  Project within a <b>social sciences</b> framework rather than technical sciences.
+
+                                  </p>
+                                  <div className="flex flex-wrap items-center mt-6 justify-starts">
+                                      <div className="text-xs mb-2 mr-2 py-1.5 px-4 text-gray-600 bg-green-200 rounded-2xl">
+                                          #Twine
+                                      </div>
+                                      <div className="text-xs mb-2 mr-2 py-1.5 px-4 text-gray-600 bg-green-200 rounded-2xl">
+                                          #CSS
+                                      </div>
+                                      <div className="text-xs mb-2 py-1.5 px-4 text-gray-600 bg-amber-200 rounded-2xl">
+                                          #SocialSciences
                                       </div>
                                   </div>
                               </div>
