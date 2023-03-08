@@ -3,9 +3,12 @@ import Image from 'next/legacy/image'
 import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
 import {BsAlignCenter, BsMoonStarsFill} from 'react-icons/bs'
+import {GoGraph} from 'react-icons/go'
 import {HiMagnifyingGlass} from 'react-icons/hi2'
-import {AiFillGithub, AiFillLinkedin, AiFillYoutube, AiFillHeart, AiOutlineLink} from 'react-icons/ai'
+import {AiFillPlusSquare, AiFillGithub, AiFillLinkedin, AiFillYoutube, AiFillHeart, AiFillTrophy, AiOutlineLink,AiFillEye} from 'react-icons/ai'
+import {FaDatabase, FaGraduationCap} from 'react-icons/fa'
 import {IoIosPaper} from 'react-icons/io'
+import {FcStatistics} from 'react-icons/fc'
 import chess from "../public/chessAI.png"
 import avatar from "../public/avatar.png"
 import vaccum from "../public/vaccum_robot.png"
@@ -18,6 +21,7 @@ import olvid from "../public/olvid.jpg"
 import resume from "../public/resume.png"
 import simulut from "../public/simulut.png"
 import victeams from "../public/victeams.jpg"
+
 
 import { useState } from 'react';
 
@@ -105,11 +109,11 @@ Please feel free to explore my repositories and connect with me on LinkedIn!
           </div>
 
           <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-gray-700">
-              <h3 className='mb-5 text-4xl text-gray-800 dark:text-white'>
+              <h3 className='mt-2 text-3xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-4xl dark:text-white'>
                 Artificial Intelligence and Data Science
               </h3>
               
-              <h5 className='text-3xl text-teal-600 dark:text-teal-400 font-medium pt-7 pb-5'>
+              <h5 className='my-4 text-indigo-600 dark:text-indigo-400 font-semibold tracking-wide uppercase text-xl pt-7 pb-5'>
                 Intelligent Agent
               </h5> 
               
@@ -205,7 +209,7 @@ Please feel free to explore my repositories and connect with me on LinkedIn!
 
               </div>
 
-              <h5 className='text-teal-600 dark:text-teal-400 text-3xl font-medium pt-7 pb-5'>
+              <h5 className='my-4 text-indigo-600 dark:text-indigo-400 font-semibold tracking-wide uppercase text-xl pt-7 pb-5'>
                 Machine Learning (without Deep Learning)
               </h5> 
               
@@ -274,7 +278,7 @@ Please feel free to explore my repositories and connect with me on LinkedIn!
 
 
 
-              <h5 className='text-teal-600 dark:text-teal-400 text-3xl font-medium pt-7 pb-5'>
+              <h5 className='my-4 text-indigo-600 dark:text-indigo-400 font-semibold tracking-wide uppercase text-xl pt-7 pb-5'>
                 Deep Learning
               </h5> 
               
@@ -324,14 +328,93 @@ Please feel free to explore my repositories and connect with me on LinkedIn!
                                           #NeuralNetworks
                                       </div>
                                   </div>
-                              </div>
-                </div>
-              </div>
+                  </div>
+              </div>           
+
             </div>
+
+
+            <div className="container p-6 px-6 rounded-2xl bg-white dark:bg-gray-800">
+    <div className="mb-2 text-center">
+        <h2 className="text-indigo-600 dark:text-indigo-400 font-semibold tracking-wide uppercase text-xl pt-7 pb-5">
+            Value-Added Features
+        </h2>
+    </div>
+    <div className="flex flex-wrap mb-12 dark:text-white">
+        <div className="w-full p-8 border-b md:w-1/2 md:border-r lg:w-1/3">
+            <div className="flex items-center mb-6">
+                <AiFillPlusSquare className='w-6 h-6 text-indigo-500'/>
+                <div className="ml-4 text-xl">
+                  Metaheuristics
+                </div>
+            </div>
+            <p className="leading-loose text-gray-500 dark:text-gray-200 text-md">
+              Exploration of Metaheuristic Algorithms: Genetic Algorithms, Simulated Annealing, Tabu Search, Hill Climbing, Ant Colony Optimization
+            </p>
+        </div>
+        <div className="w-full p-8 border-b md:w-1/2 lg:w-1/3 lg:border-r">
+            <div className="flex items-center mb-6">
+                <AiFillEye className='w-6 h-6 text-indigo-500'/>
+                <div className="ml-4 text-xl">
+                    Computer Vision
+                </div>
+            </div>
+            <p className="leading-loose text-gray-500 dark:text-gray-200 text-md">
+            Image manipulation and transformation, familiarization with Artificial vision and image processing modules : NumPy, OpenCV, scikit-image, scikit-learn, TensorFlow, Keras.
+            </p>
+        </div>
+        <div className="w-full p-8 border-b md:w-1/2 md:border-r lg:w-1/3 lg:border-r-0">
+            <div className="flex items-center mb-6">
+                <GoGraph className='w-6 h-6 text-indigo-500'/>
+                <div className="ml-4 text-xl">
+                    Statistic
+                </div>
+            </div>
+            <p className="leading-loose text-gray-500 dark:text-gray-200 text-md">
+              Advanced statistics course covering : estimation, hypothesis testing, analysis of variance, linear regression, and confidence intervals.
+            </p>
+        </div>
+        <div className="w-full p-8 border-b md:w-1/2 lg:w-1/3 lg:border-r lg:border-b-0">
+        <div className="flex items-center mb-6">
+                <FaDatabase className='w-6 h-6 text-indigo-500'/>
+                <div className="ml-4 text-xl">
+                    Database
+                </div>
+            </div>
+            <p className="leading-loose text-gray-500 dark:text-gray-200 text-md">
+              Familiar with database conception and implementation with SQL, PostgreSQL, and PlantUML tools.
+            </p>
+        </div>
+        <div className="w-full p-8 border-b md:w-1/2 md:border-r md:border-b-0 lg:w-1/3 lg:border-b-0">
+            <div className="flex items-center mb-6">
+                <AiFillTrophy className="w-6 h-6 text-indigo-500"/>
+                <div className="ml-4 text-xl">
+                    AI Competition
+                </div>
+            </div>
+            <p className="leading-loose text-gray-500 dark:text-gray-200 text-md">
+              Member of the UQAC AI competition team called OCIAN.
+              Participation in AI Hackathon
+            </p>
+        </div>
+        <div className="w-full p-8 md:w-1/2 lg:w-1/3">
+            <div className="flex items-center mb-6">
+                <FaGraduationCap className="w-6 h-6 text-indigo-500"/>
+                <div className="ml-4 text-xl">
+                  University Tutor
+                </div>
+            </div>
+            <p className="leading-loose text-gray-500 dark:text-gray-200 text-md">
+              University student job : tutor students who faced difficulties in advanced statistics course.
+            </p>
+        </div>
+    </div>
+              </div> 
+          </div>
 
             
           <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-gray-700">
-              <h3 className='mb-5 text-4xl text-gray-800 dark:text-white'>
+              <h3 className='mt-2 mb-4 text-3xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-4xl dark:text-white'>
                 Web Development
               </h3>
               
@@ -438,7 +521,7 @@ Please feel free to explore my repositories and connect with me on LinkedIn!
             </div>
 
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-gray-700">
-              <h3 className='mb-5 text-4xl text-gray-800 dark:text-white'>
+              <h3 className='mt-2 mb-4 text-3xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-4xl dark:text-white'>
                 Video Games Development
               </h3>
               
@@ -523,178 +606,6 @@ Please feel free to explore my repositories and connect with me on LinkedIn!
 
             
             <br></br>
-
-              
-
-              
-    
-
-              {/* A JSX comment 
-              <h5 className='text-3xl dark:text-white font-medium pt-7 pb-5'>
-                Traitement des images
-              </h5> 
-              
-              <div className=' flex flex-wrap lg:gap-16 lg:justify-self-auto'>
-
-                <div className="w-64 m-auto overflow-hidden shadow-lg rounded-2xl h-90 mb-8 dark:bg-gray-600">
-                          <Image src={chess} className="rounded-lg object-cover"  layout="responsive"/>
-                              <div className="relative w-full p-4 dark:bg-gray-600 bg-white">
-                                
-                                <p className="mb-2 text-xl font-medium dark:text-white text-gray-800">
-                                      Détection d'objets
-                                  </p>
-                                  <p className="text-xs dark:text-gray-300 text-gray-600">
-                                      Entourée les objets non rangés à partir d'une photo de référence
-                                  </p>
-                                  <div className="flex flex-wrap items-center mt-6 justify-starts">
-                                      <div className="text-xs mb-2 mr-2 py-1.5 px-4 text-gray-600 bg-green-200 rounded-2xl">
-                                          #Python
-                                      </div>
-                                      <div className="text-xs mb-2 mr-2 py-1.5 px-4 text-gray-600 bg-green-200 rounded-2xl">
-                                          #OpenCV
-                                      </div>
-                                  </div>
-                              </div>
-                </div>
-                
-              </div>
-
-              
-
-
-
-                    <p className='py-4'>
-                      {" "}
-                      <b>Apprentissage Machine</b> 
-                        <br/> Classement des morceaux Spotify selon leur genre<a href='https://www.overleaf.com/read/kxncjbwnghvt' target='_blank'></a> 
-                        <br/> Jeux sérieux pour faire apprendre l'Apprentissage Machine
-                        <br/><span className='text-gray-600 italic font-thin'>  ACP, KNN, Random Forest, Naif Baysien, KMeans, Regression Logistique </span>
-
-                    </p>
-
-                    <p className='py-4'>
-                      {" "}
-                      <b>Apprentissage Profond</b> 
-                        <br/> Prédicteur taux de change EUR/CAN <span className='text-gray-600 italic font-thin'> (en cours) </span>
-                        <br/> Utilisation du Deep Learning dans le moteur de jeu Unity <span className='text-gray-600 italic font-thin'> (en cours) </span>
-                        <br/><span className='text-gray-600 italic font-thin'>  RNN, LSTM</span>
-
-                    </p>
-
-                    <p className='py-4'>
-                      {" "}
-                      <b>Traitement des images</b> 
-                        <br/> Classement des morceaux spotify selon leur genre
-                        <br/><span className='text-gray-600 italic font-thin'> Masque </span>
-                    </p>
-                    <p className='py-4'>
-                      {" "}
-                      <b>Métaheuristiques</b> 
-                        <br/> Découverte des algorithmes les plus utilisés
-                        <br/><span className='text-gray-600 italic font-thin'> Algorithme de descente, Recuit Simulé, Tabou </span>
-                    </p>
-                    <p className='py-4'>
-                      {" "}
-                      <b>Autres</b> 
-                        <br/> Cours de statistiques 
-                        <br/> Projet de gestion de données 
-                        <br/><span className='text-gray-600 italic font-thin'> SQL, PostgreSQL, PlantUML, estimation, tests d'hypothèses, analyse de la variance, régression linéaire, intervalle de confiance </span>
-                    </p>
-                  
-                  <br></br>
-                  
-                  <p>
-                    <h4 className='py-2 text-cyan-500'>
-                    Projets Extra Scolaire (verif orthoooooo)
-                  </h4>
-                  <p className='py-1'>
-                    • Hackaton IA : comprendre les dessins industriels par traitement des images
-                  </p>
-                  <p className='py-1'>
-                    {" "}
-                    • Membre d'OCIAN : club de compétitions de l'UQAC en IA et Jeux Vidéo
-                  </p>
-                  <p className='py-1'>
-                    {" "}
-                    • Tutrice en statistiques : pour les étudiants de l'UTC en difficulté
-                  </p>
-                  <br/>
-                  <h4 className='py-2 text-teal-600'> Langages et librairies</h4>
-                  <p className='text-gray-800 py-1'>R</p>
-                  <p className='text-gray-800 py-1'>Python</p>
-                  <p className='text-gray-800 py-1'>Scikit, Tensorflow</p>
-                </p>
-            </div>
-
-          <div className='lg:flex gap-10 justify-center'>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-gray-700 dark:bg-opacity-80">
-              <h3 className='text-lg dark:text-white font-medium pt-8 pb-2'>Jeux vidéo</h3>
-              <p className='py-4 dark:text-white'>
-                {" "}
-                Conception et développement de jeux vidéo
-                <br/><span className='text-gray-600 italic dark:text-white font-thin'>Unity 2D, C#</span>
-
-              </p>
-              <p className='py-4 dark:text-white'>
-                {" "}
-                Ajout de features sur le projet VR Victeams
-                <br/><span className='text-gray-600 italic dark:text-white font-thin'>Unity, SteamVR, Oculus</span>
-              </p>
-            </div>
-
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-gray-700">
-              <h3 className='text-lg font-medium pt-8 pb-2'>Développement web</h3>
-              <p className='py-4'>
-                {" "}
-                Stage de 6 mois en tant que développeuse Full Stack chez Olvid
-                <br/><span className='text-gray-600 italic font-thin'>Java, VueJS, Liquibase, SQL, GitLab</span>
-              </p>
-
-              <p className='py-4'>
-                {" "}
-                Projet personnel : CV site Web  
-                <br/><span className='text-gray-600 italic font-thin'>VueJS, BoostrapVue</span>
-              </p>
-              
-              <p className='py-4'>
-                {" "}
-                Projet interactif : simulation humoristique de la vie étudiante à l'UTC 
-                <br/><span className='text-gray-600 italic font-thin'>Twine</span>
-              </p>
-            </div>
-
-          </div>
-        </section>
-
-        <section>
-          <div>
-            <h3 className='text-3xl py-1 dark:text-white'> Portfolio </h3>
-          
-            <p className='text-md py-2 leading-8 text-gray-800 dark:text-gray-400'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. 3
-              Proin vitae sapien quis urna suscipit <span className='text-teal-500'> bibendum </span> 
-              non ut lacus. Donec in felis mi. Sed fringilla eleifend tortor, porta imperdiet ex imperdiet non. Praesent auctor eros in erat eleifend, et hendrerit eros congue. Mauris auctor mattis egestas. Curabitur in est sapien. Duis ut eros hendrerit, egestas turpis vitae, posuere mi. Donec eu interdum neque, sed imperdiet tellus. Phasellus enim elit, pellentesque accumsan congue sit amet, ullamcorper eget ante.
-            </p>
-            <p className='text-md py-2 leading-8 text-gray-800 dark:text-gray-400'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. 3
-              Proin vitae sapien quis urna suscipit <span className='text-teal-500'> bibendum </span> 
-              non ut lacus. Donec in felis mi. Sed fringilla eleifend tortor, porta imperdiet ex imperdiet non. Praesent auctor eros in erat eleifend, et hendrerit eros congue. Mauris auctor mattis egestas. Curabitur in est sapien. Duis ut eros hendrerit, egestas turpis vitae, posuere mi. Donec eu interdum neque, sed imperdiet tellus. Phasellus enim elit, pellentesque accumsan congue sit amet, ullamcorper eget ante.
-            </p>
-
-          </div>
-          <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
-            <div className='basis/1/3'>
-              <Image src={chess} className="rounded-lg object-cover" layout="responsive"/>
-            </div>
-            <div className='basis/1/3'>
-              <Image src={chess} className="rounded-lg object-cover" layout="responsive"/>
-            </div>
-            <div className='basis/1/3'>
-              <Image src={chess} className="rounded-lg object-cover" layout="responsive"/>
-            </div>
-            <div className='basis/1/3'>
-              <Image src={chess} className="rounded-lg object-cover" layout="responsive"/>
-            </div>*/}
           
         </section>
   
