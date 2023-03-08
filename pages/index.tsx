@@ -20,7 +20,6 @@ import simulut from "../public/simulut.png"
 import victeams from "../public/victeams.jpg"
 
 import { useState } from 'react';
-import VideoPlayer from './videoPlayer'
 
 
 
