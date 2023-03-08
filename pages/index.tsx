@@ -17,8 +17,10 @@ import unity from "../public/unity.png"
 import olvid from "../public/olvid.jpg"
 import resume from "../public/resume.png"
 import simulut from "../public/simulut.png"
+import victeams from "../public/victeams.jpg"
 
 import { useState } from 'react';
+import VideoPlayer from './videoPlayer'
 
 
 
@@ -54,7 +56,7 @@ export default function Home() {
 
           </nav>
 
-          <div className='text-center p-10 py-10'>
+          <div className='text-center p-4'>
             <h2 className='text-5xl py-2 text-teal-600 font-medium md:text-6xl'> Louise Lizé</h2>
             <h3 className='text-2xl py-2 md:text-3xl dark:text-white'> Computer Science Student</h3>
 
@@ -77,13 +79,13 @@ Although I am originally studying at French engineering university <a href='http
 As I look ahead to my future career, I am eager to gain industry experience through a 6-month internship starting in September 2023, with a preference for opportunities located in Montreal. However, I am also open to exploring opportunities elsewhere in the world. 🔭
 
 On this platform, you can explore a selection of my favorite projects, both those I completed during my studies at school and those I pursued independently outside of the classroom. 💻
-
+<br/>
 Please feel free to explore my repositories and connect with me on LinkedIn!
             </p>
           </div>
 
 
-          <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400'>
+          <div className='text-5xl flex justify-center gap-16 pb-16 text-gray-600 dark:text-gray-400'>
             <a href='https://www.linkedin.com/in/louise-lize/' target="_blank" rel="noreferrer">
               <AiFillLinkedin/>
             </a>
@@ -333,56 +335,8 @@ Please feel free to explore my repositories and connect with me on LinkedIn!
               <h3 className='mb-5 text-4xl text-gray-800 dark:text-white'>
                 Web Development
               </h3>
-
               
-              <div className='flex flex-wrap justify-center gap-14 lg:gap-20'>
-
-                <div className="w-96 overflow-hidden shadow-lg rounded-2xl h-90 mb-8 dark:bg-gray-600">
-                          <Image src={olvid} className="rounded-lg object-cover"  layout="responsive"/>
-                              <div className="relative w-full p-4 dark:bg-gray-600 bg-white">
-                              <a href='https://www.olvid.io/faq/console-d-administration-olvid/' target="_blank" rel="noreferrer">
-                              <button aria-label="Go to article" type="button" className="absolute w-12 h-12 text-white bg-gray-700 rounded-full right-12 -top-7">
-                                  <HiMagnifyingGlass width="20"  height="20" fill="currentColor" className="w-6 h-6 mx-auto text-white"/>
-                                  </button>
-                                </a>
-                                <p className="dark:text-white mb-2 text-xl font-medium text-gray-800">
-                                    Full Stack Developer Intern
-                                  </p>
-                                  <p className="text-xs dark:text-gray-300 text-gray-600">
-                                  <span className='text-gray-600 italic font-thin dark:text-gray-300'>  Sept. 2021 - Feb. 2022 </span>
-                                    <br></br><br></br>
-                                    <b>6-month</b> internship at <span className='text-blue-700 dark:text-blue-300'>Olvid</span>, french start-up specialized in providing highly secure messaging services. 
-                                    <br></br>
-                                    Creation of a web application for company admins. The app was designed to allow the administrators of Olvid`&apos;s client companie to create and manage groups, add or remove workers, configure settings, restrict visibility, and revoke keys as needed.
-                                  </p>
-                                  <div className="flex flex-wrap items-center mt-6 justify-starts">
-                                      <div className="text-xs mb-2 mr-2 py-1.5 px-4 text-gray-600 bg-green-200 rounded-2xl">
-                                          #VueJS
-                                      </div>
-                                      <div className="text-xs mb-2 mr-2 py-1.5 px-4 text-gray-600 bg-green-200 rounded-2xl">
-                                          #Java
-                                      </div>
-                                      <div className="text-xs mb-2 mr-2 py-1.5 px-4 text-gray-600 bg-green-200 rounded-2xl">
-                                          #BootsrapVue
-                                      </div>
-                                      <div className="text-xs mb-2 mr-2 py-1.5 px-4 text-gray-600 bg-green-200 rounded-2xl">
-                                          #GitLab
-                                      </div>
-                                      <div className="text-xs mb-2 mr-2 py-1.5 px-4 text-gray-600 bg-green-200 rounded-2xl">
-                                          #Liquibase
-                                      </div>
-                                      <div className="text-xs mb-2 mr-2 py-1.5 px-4 text-gray-600 bg-green-200 rounded-2xl">
-                                          #Keycloak
-                                      </div>
-                                  </div>
-                              </div>
-                </div>
-                
-              
-              </div>
-              
-              <div className='flex flex-wrap justify-center gap-14 lg:gap-20'>
-
+              <div className='flex flex-wrap items-baseline justify-center gap-14 lg:gap-20'>
                 <div className="w-64 overflow-hidden shadow-lg rounded-2xl h-90 mb-8 dark:bg-gray-600">
                           <Image src={resume} className="rounded-lg object-cover"  layout="responsive"/>
                               <div className="relative w-full p-4 dark:bg-gray-600 bg-white">
@@ -411,7 +365,46 @@ Please feel free to explore my repositories and connect with me on LinkedIn!
                                   </div>
                               </div>
                 </div>
-                
+                <div className="w-96 overflow-hidden shadow-lg rounded-2xl h-90 mb-8 dark:bg-gray-600">
+                          <Image src={olvid} className="rounded-lg object-cover"  layout="responsive"/>
+                              <div className="relative w-full p-4 dark:bg-gray-600 bg-white">
+                              <a href='https://olvid.io/faq/olvid-management-console/' target="_blank" rel="noreferrer">
+                              <button aria-label="Go to article" type="button" className="absolute w-12 h-12 text-white bg-gray-700 rounded-full right-12 -top-7">
+                                  <HiMagnifyingGlass width="20"  height="20" fill="currentColor" className="w-6 h-6 mx-auto text-white"/>
+                                  </button>
+                                </a>
+                                <p className="dark:text-white mb-2 text-xl font-medium text-gray-800">
+                                    Full Stack Developer Intern
+                                  </p>
+                                  <p className="text-xs dark:text-gray-300 text-gray-600">
+                                  <span className='text-gray-600 italic font-thin dark:text-gray-300'>  Sept. 2021 - Feb. 2022 </span>
+                                    <br></br><br></br>
+                                    <b>6-month</b> internship at <a href='https://olvid.io/en/' target="_blank" rel="noreferrer" className='text-blue-700 dark:text-blue-300'>Olvid</a>, french start-up specialized in providing highly secure messaging services. 
+                                    <br></br>
+                                    Creation of a web application for company admins. The app was designed to allow the administrators of Olvid`&apos;s client companie to create and manage groups, add or remove workers, configure settings, restrict visibility, and revoke keys as needed.
+                                  </p>
+                                  <div className="flex flex-wrap items-center mt-6 justify-starts">
+                                      <div className="text-xs mb-2 mr-2 py-1.5 px-4 text-gray-600 bg-green-200 rounded-2xl">
+                                          #VueJS
+                                      </div>
+                                      <div className="text-xs mb-2 mr-2 py-1.5 px-4 text-gray-600 bg-green-200 rounded-2xl">
+                                          #Java
+                                      </div>
+                                      <div className="text-xs mb-2 mr-2 py-1.5 px-4 text-gray-600 bg-green-200 rounded-2xl">
+                                          #BootsrapVue
+                                      </div>
+                                      <div className="text-xs mb-2 mr-2 py-1.5 px-4 text-gray-600 bg-green-200 rounded-2xl">
+                                          #GitLab
+                                      </div>
+                                      <div className="text-xs mb-2 mr-2 py-1.5 px-4 text-gray-600 bg-green-200 rounded-2xl">
+                                          #Liquibase
+                                      </div>
+                                      <div className="text-xs mb-2 mr-2 py-1.5 px-4 text-gray-600 bg-green-200 rounded-2xl">
+                                          #Keycloak
+                                      </div>
+                                  </div>
+                              </div>
+                </div>
                 <div className="w-64 overflow-hidden shadow-lg rounded-2xl h-90 mb-8 dark:bg-gray-600">
                           <Image src={simulut} className="rounded-lg object-cover"  layout="responsive"/>
                               <div className="relative w-full p-4 dark:bg-gray-600 bg-white">
@@ -442,6 +435,100 @@ Please feel free to explore my repositories and connect with me on LinkedIn!
                               </div>
                 </div>
               </div>
+
+            </div>
+
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-gray-700">
+              <h3 className='mb-5 text-4xl text-gray-800 dark:text-white'>
+                Video Games Development
+              </h3>
+              
+              <div className='flex flex-wrap justify-center gap-14 lg:gap-20'>
+                <div className="w-64 overflow-hidden shadow-lg rounded-2xl h-90 mb-8 dark:bg-gray-600">
+                  <video src="ic06.mp4" autoPlay={true} loop muted className=""/>
+                              <div className="relative w-full p-4 dark:bg-gray-600 bg-white">
+                                <p className="dark:text-white mb-2 text-xl font-medium text-gray-800">
+                                      God&apos;s Savior
+                                  </p>
+                                  <p className="text-xs dark:text-gray-300 text-gray-600">
+                                  Acquiring the skills and knowledge necessary to both design and implement a game, while also becoming proficient with Godot game engine.
+                                  </p>
+                                  <div className="flex flex-wrap items-center mt-6 justify-starts">
+                                      <div className="text-xs mb-2 mr-2 py-1.5 px-4 text-gray-600 bg-green-200 rounded-2xl">
+                                          #Godot
+                                      </div>
+                                      
+                                      <div className="text-xs mb-2 mr-2 py-1.5 px-4 text-gray-600 bg-orange-200 rounded-2xl">
+                                          #RPG
+                                      </div>
+                                      <div className="text-xs mb-2 mr-2 py-1.5 px-4 text-gray-600 bg-orange-200 rounded-2xl">
+                                          #ZeldaLike
+                                      </div>
+                                  </div>
+                              </div>
+                </div>
+
+                <div className="w-64 overflow-hidden shadow-lg rounded-2xl h-90 mb-8 dark:bg-gray-600">
+                          <Image src={victeams} className="rounded-lg object-cover"  layout="responsive"/>
+                              <div className="relative w-full p-4 dark:bg-gray-600 bg-white">
+                              <a href='https://anr.fr/en/latest-news/read/news/virtual-reality-to-train-medical-experts-in-team-management-in-crisis-situations-the-anr-victeams-p/' target="_blank" rel="noreferrer">
+                              <button aria-label="Go to article" type="button" className="absolute w-12 h-12 text-white bg-gray-700 rounded-full right-12 -top-7">
+                                  <HiMagnifyingGlass width="20"  height="20" fill="currentColor" className="w-6 h-6 mx-auto text-white"/>
+                                  </button>
+                                </a>
+                                <p className="dark:text-white mb-2 text-xl font-medium text-gray-800">
+                                      VICTEAMS VR Project
+                                  </p>
+                                  <p className="text-xs dark:text-gray-300 text-gray-600">
+                                  Implementing a new feature to medical professionals simulation in stressful and crisis situations. Create additional challenges by creating a size limit on the stock.
+                                  </p>
+                                  <div className="flex flex-wrap items-center mt-6 justify-starts">
+                                      <div className="text-xs mb-2 mr-2 py-1.5 px-4 text-gray-600 bg-green-200 rounded-2xl">
+                                          #SteamVR
+                                      </div>
+                                      <div className="text-xs mb-2 mr-2 py-1.5 px-4 text-gray-600 bg-green-200 rounded-2xl">
+                                          #Unity
+                                      </div>
+                                      <div className="text-xs mb-2 mr-2 py-1.5 px-4 text-gray-600 bg-green-200 rounded-2xl">
+                                          #CSharp
+                                      </div>
+                                  </div>
+                              </div>
+                </div>
+
+                <div className="w-64 overflow-hidden shadow-lg rounded-2xl h-90 mb-8 dark:bg-gray-600">
+                    <video src="amalgames.mp4" autoPlay={true} loop muted className=""/>
+                              <div className="relative w-full p-4 dark:bg-gray-600 bg-white">
+                                  <p className="dark:text-white mb-2 text-xl font-medium text-gray-800">
+                                      Amalgames
+                                  </p>
+                                  <p className="text-xs dark:text-gray-300 text-gray-600">
+                                  Acquiring the skills and knowledge necessary to both design and implement a game, while also becoming proficient with Unity game engine.
+                                  </p>
+                                  <div className="flex flex-wrap items-center mt-6 justify-starts">
+                                      <div className="text-xs mb-2 mr-2 py-1.5 px-4 text-gray-600 bg-green-200 rounded-2xl">
+                                          #Unity2D
+                                      </div>
+                                      <div className="text-xs mb-2 mr-2 py-1.5 px-4 text-gray-600 bg-green-200 rounded-2xl">
+                                          #CSharp
+                                      </div>
+                                      <div className="text-xs mb-2 mr-2 py-1.5 px-4 text-gray-600 bg-orange-200 rounded-2xl">
+                                          #Plateformer
+                                      </div>
+                                  </div>
+                              </div>
+                </div>
+              </div>
+
+            </div>
+
+            
+            <br></br>
+
+              
+
+              
+    
 
               {/* A JSX comment 
               <h5 className='text-3xl dark:text-white font-medium pt-7 pb-5'>
@@ -609,7 +696,7 @@ Please feel free to explore my repositories and connect with me on LinkedIn!
             <div className='basis/1/3'>
               <Image src={chess} className="rounded-lg object-cover" layout="responsive"/>
             </div>*/}
-          </div>
+          
         </section>
   
       </main>
