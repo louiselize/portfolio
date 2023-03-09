@@ -9,6 +9,7 @@ import {AiFillPlusSquare, AiFillGithub, AiFillLinkedin, AiFillYoutube, AiFillHea
 import {FaDatabase, FaGraduationCap} from 'react-icons/fa'
 import {IoIosPaper} from 'react-icons/io'
 import {FcStatistics} from 'react-icons/fc'
+import {MdVideogameAsset} from 'react-icons/md'
 import chess from "../public/chessAI.png"
 import avatar from "../public/avatar.png"
 import vaccum from "../public/vaccum_robot.png"
@@ -80,9 +81,9 @@ export default function Home() {
 Although I am originally studying at French engineering university <a href='https://www.utc.fr/' target="_blank" rel="noreferrer" className='text-teal-600'>UTC</a>, I am currently pursuing a double degree program at <a href='https://www.uqac.ca/' target="_blank" rel="noreferrer" className='text-teal-600'>UQAC</a> in Canada, which has allowed me to expand my horizons and gain a unique perspective on my field of study.
 
 As I look ahead to my future career, I am eager to gain industry experience through a 6-month internship starting in September 2023, with a preference for opportunities located in Montreal. However, I am also open to exploring opportunities elsewhere in the world. 🔭
-
-On this platform, you can explore a selection of my favorite projects, both those I completed during my studies at school and those I pursued independently outside of the classroom. 💻
-<br/>
+<br></br>
+On this platform, you can explore a selection of my favorite projects, completed during my studies at school and outside of the classroom. 💻
+<br/><br></br>
 Please feel free to explore my repositories and connect with me on LinkedIn!
             </p>
           </div>
@@ -463,7 +464,7 @@ Please feel free to explore my repositories and connect with me on LinkedIn!
                                     <br></br><br></br>
                                     <b>6-month</b> internship at <a href='https://olvid.io/en/' target="_blank" rel="noreferrer" className='text-blue-700 dark:text-blue-300'>Olvid</a>, french start-up specialized in providing highly secure messaging services. 
                                     <br></br>
-                                    Creation of a web application for company admins. The app was designed to allow the administrators of Olvid`&apos;s client companie to create and manage groups, add or remove workers, configure settings, restrict visibility, and revoke keys as needed.
+                                    Creation of a web application for company admins. The app was designed to allow the administrators of Olvid&apos;s client companie to create and manage groups, add or remove workers, configure settings, restrict visibility, and revoke keys as needed.
                                   </p>
                                   <div className="flex flex-wrap items-center mt-6 justify-starts">
                                       <div className="text-xs mb-2 mr-2 py-1.5 px-4 text-gray-600 bg-green-200 rounded-2xl">
@@ -529,6 +530,11 @@ Please feel free to explore my repositories and connect with me on LinkedIn!
                 <div className="w-64 overflow-hidden shadow-lg rounded-2xl h-90 mb-8 dark:bg-gray-600">
                   <video src="ic06.mp4" autoPlay={true} loop muted className=""/>
                               <div className="relative w-full p-4 dark:bg-gray-600 bg-white">
+                              <a href='https://github.com/louiselize/God_s_Savior' target="_blank" rel="noreferrer">
+                                  <button aria-label="Go to article" type="button" className="absolute w-12 h-12 text-white bg-gray-700 rounded-full right-8 -top-6">
+                                  <MdVideogameAsset width="20"  height="20" fill="currentColor" className="w-6 h-6 mx-auto text-white"/>
+                                  </button>
+                                </a>
                                 <p className="dark:text-white mb-2 text-xl font-medium text-gray-800">
                                       God&apos;s Savior
                                   </p>
