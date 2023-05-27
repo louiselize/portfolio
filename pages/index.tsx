@@ -6,7 +6,7 @@ import {BsAlignCenter, BsMoonStarsFill} from 'react-icons/bs'
 import {GoGraph} from 'react-icons/go'
 import {HiMagnifyingGlass} from 'react-icons/hi2'
 import {AiFillPlusSquare, AiFillGithub, AiFillLinkedin, AiFillYoutube, AiFillHeart, AiFillTrophy, AiOutlineLink,AiFillEye} from 'react-icons/ai'
-import {FaDatabase, FaGraduationCap} from 'react-icons/fa'
+import {FaDatabase, FaGraduationCap, FaScroll} from 'react-icons/fa'
 import {IoIosPaper} from 'react-icons/io'
 import {FcStatistics} from 'react-icons/fc'
 import {MdVideogameAsset} from 'react-icons/md'
@@ -22,6 +22,8 @@ import olvid from "../public/olvid.jpg"
 import resume from "../public/resume.png"
 import simulut from "../public/simulut.png"
 import victeams from "../public/victeams.jpg"
+import twitter from "../public/twitter.png"
+
 
 
 import { useState } from 'react';
@@ -52,7 +54,7 @@ export default function Home() {
                 <BsMoonStarsFill onClick={() => setDarkMode(!darkMode)} className='cursor-pointer text-2xl dark:text-white'/>
               </li>
               <li>
-                <a href='#' className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8'>
+                <a href="LIZE_Louise_Resume_EN.pdf" target="_blank" className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8'>
                   Resume
                 </a>
                 </li>
@@ -211,7 +213,7 @@ Please feel free to explore my repositories and connect with me on LinkedIn!
               </div>
 
               <h5 className='my-4 text-indigo-600 dark:text-indigo-400 font-semibold tracking-wide uppercase text-xl pt-7 pb-5'>
-                Machine Learning (without Deep Learning)
+                Machine Learning
               </h5> 
               
               <div className=' flex gap-14 lg:gap-20 justify-center flex-wrap'>
@@ -249,6 +251,42 @@ Please feel free to explore my repositories and connect with me on LinkedIn!
                                   </div>
                               </div>
                 </div>
+                <div className="w-64 overflow-hidden shadow-lg rounded-2xl h-90 mb-8 dark:bg-gray-600">
+                          <Image src={twitter} className="rounded-lg object-cover" layout="responsive"/>
+                              <div className="relative w-full p-4 dark:bg-gray-600 bg-white">
+                              <button aria-label="Go to article" type="button" className="absolute w-12 h-12 text-white bg-red-500 rounded-full left-12 -top-6">
+                                  <AiFillHeart width="18"  height="18" fill="currentColor" className="w-5 h-5 mx-auto text-white"/>
+                              </button>
+                                <a href='https://www.overleaf.com/read/nwsxfmwtkcqg' target="_blank" rel="noreferrer">
+                                  <button aria-label="Go to article" type="button" className="absolute w-12 h-12 text-white bg-gray-700 rounded-full right-12 -top-6">
+                                  <FaScroll width="20"  height="20" fill="currentColor" className="w-6 h-6 mx-auto text-white"/>
+                                  </button>
+                                </a>
+                                <p className="dark:text-white mt-2 mb-2 text-xl font-medium text-gray-800">
+                                      Twitter Data Analysis
+                                  </p>
+                                  <p className="text-xs dark:text-gray-300 text-gray-600">
+                                  Forecast tweet influence using text information and user profile feature
+                                  </p>
+                                  <div className="flex flex-wrap items-center mt-6 justify-starts">
+                                      <div className="text-xs mb-2 mr-2 py-1.5 px-4 text-gray-600 bg-green-200 rounded-2xl">
+                                          #Python
+                                      </div>
+                                      <div className="text-xs mb-2 mr-2 py-1.5 px-4 text-gray-600 bg-blue-200 rounded-2xl">
+                                          #Prediction
+                                      </div>
+                                      <div className="text-xs mb-2 mr-2 py-1.5 px-4 text-gray-600 bg-blue-200 rounded-2xl">
+                                          #NLP
+                                      </div>
+                                      <div className="text-xs mb-2 py-1.5 px-4 text-gray-600 bg-blue-200 rounded-2xl">
+                                          #WordEmbedding
+                                      </div>
+                                      <div className="text-xs mb-2 py-1.5 px-4 text-gray-600 bg-blue-200 rounded-2xl">
+                                          #AppliedResearch
+                                      </div>
+                                  </div>
+                              </div>
+                </div>
                 
                 <div className="w-64 overflow-hidden shadow-lg rounded-2xl h-90 mb-8 dark:bg-gray-600">
                           <Image src={metropolIA} className="rounded-lg object-cover" layout="responsive"/>
@@ -277,18 +315,17 @@ Please feel free to explore my repositories and connect with me on LinkedIn!
                 </div>
               </div>
 
-
-
-              <h5 className='my-4 text-indigo-600 dark:text-indigo-400 font-semibold tracking-wide uppercase text-xl pt-7 pb-5'>
-                Deep Learning
-              </h5> 
               
               <div className='flex flex-wrap justify-center gap-14 lg:gap-20'>
 
                 <div className="w-64 overflow-hidden shadow-lg rounded-2xl h-90 mb-8 dark:bg-gray-600">
                           <Image src={monnAI} className="rounded-lg object-cover"  layout="responsive"/>
-                              <div className="relative w-full p-4 dark:bg-gray-600 bg-white">
-                                
+                                <div className="relative w-full p-4 bg-white dark:bg-gray-600">
+                                <a href='Atelier_Pratique_en_IA_H23.pdf' target="_blank" rel="noreferrer">
+                                  <button aria-label="Go to article" type="button" className="absolute w-12 h-12 text-white bg-gray-700 rounded-full right-8 -top-9">
+                                  <FaScroll width="20"  height="20" fill="currentColor" className="w-6 h-6 mx-auto text-white"/>
+                                  </button>
+                                </a>
                                 <p className="dark:text-white mb-2 text-xl font-medium text-gray-800">
                                       Currency forecast
                                   </p>
@@ -299,12 +336,20 @@ Please feel free to explore my repositories and connect with me on LinkedIn!
                                       <div className="text-xs mb-2 mr-2 py-1.5 px-4 text-gray-600 bg-green-200 rounded-2xl">
                                           #Python
                                       </div>
-                                      <div className="text-xs mb-2 mr-2 py-1.5 px-4 text-gray-600 bg-red-200 rounded-2xl">
+                                      
+                                      <div className="text-xs mb-2 mr-2 py-1.5 px-4 text-gray-600 bg-blue-200 rounded-2xl">
+                                          #BILSTM
+                                      </div>
+                                      <div className="text-xs mb-2 mr-2 py-1.5 px-4 text-gray-600 bg-blue-200 rounded-2xl">
                                           #RNN
                                       </div>
-                                      <div className="text-xs mb-2 mr-2 py-1.5 px-4 text-gray-600 bg-red-200 rounded-2xl">
+                                      <div className="text-xs mb-2 mr-2 py-1.5 px-4 text-gray-600 bg-blue-200 rounded-2xl">
+                                          #GRU
+                                      </div>
+                                      <div className="text-xs mb-2 mr-2 py-1.5 px-4 text-gray-600 bg-blue-200 rounded-2xl">
                                           #LSTM
                                       </div>
+                                      
                                   </div>
                               </div>
                 </div>
@@ -313,10 +358,10 @@ Please feel free to explore my repositories and connect with me on LinkedIn!
                           <Image src={unity} className="rounded-lg object-cover"  layout="responsive"/>
                               <div className="relative w-full p-4 dark:bg-gray-600 bg-white">
                                   <p className="dark:text-white mb-2 text-xl font-medium text-gray-800">
-                                      Unity Deep Learning
+                                      Unity Intelligent Agent
                                   </p>
                                   <p className="text-xs dark:text-gray-300 text-gray-600">
-                                    Implement deep learning algorithms to create an intelligent enemy
+                                    Create agents able to make decisions by interacting with their environment
                                   </p>
                                   <div className="flex flex-wrap items-center mt-6 justify-starts">
                                       <div className="text-xs mb-2 mr-2 py-1.5 px-4 text-gray-600 bg-green-200 rounded-2xl">
@@ -325,8 +370,8 @@ Please feel free to explore my repositories and connect with me on LinkedIn!
                                       <div className="text-xs mb-2 mr-2 py-1.5 px-4 text-gray-600 bg-green-200 rounded-2xl">
                                           #Unity
                                       </div>
-                                      <div className="text-xs mb-2 py-1.5 px-4 text-gray-600 bg-red-200 rounded-2xl">
-                                          #NeuralNetworks
+                                      <div className="text-xs mb-2 py-1.5 px-4 text-gray-600 bg-blue-200 rounded-2xl">
+                                          #ReinforcementLearning
                                       </div>
                                   </div>
                   </div>
