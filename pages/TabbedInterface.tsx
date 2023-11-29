@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import avatar from "../public/avatar.png"
-import StravaApi from './StravaAPI';
 import Profile from './Profile';
 import PortfolioIA from './PortfolioIA';
 import PortfolioWeb from './PortfolioWeb';
