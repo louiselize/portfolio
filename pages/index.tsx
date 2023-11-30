@@ -20,7 +20,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className='bg-palette-light-200 md:px-20 lg:px-30 dark:bg-black'>
+      <main className='bg-palette-light-200 md:px-20 lg:px-40 xl:px-80  dark:bg-black' style={{ height: '100vh'}}>
         <section className='px-10'>
           <nav className='py-10 flex justify-between'>
           
