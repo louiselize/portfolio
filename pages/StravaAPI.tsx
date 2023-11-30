@@ -1,11 +1,11 @@
-import { useState, useEffect } from "react";
+import React from 'react';
 
-function StravaApi() {
+const StravaAPI = () => {
+  
+  return (
+    <div>
+    </div>
+  );
+};
 
-  
-    function showActivities() {
-      
-    }
-}
-  
-export default StravaApi;
+export default StravaAPI;
