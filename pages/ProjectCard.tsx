@@ -30,13 +30,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 }) => {
   const [isHovered, setIsHovered] = useState(false);
 
-  const handleMouseEnter = () => {
-    setIsHovered(true);
-  };
-
-  const handleMouseLeave = () => {
-    setIsHovered(false);
-  };
 
   return (
     <div className={`w-52 overflow-hidden shadow-lg rounded-2xl h-90 mb-8 bg-palette-light-200 dark:bg-gray-600`}>
@@ -65,8 +58,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                 className={`w-6 h-6 mx-auto ${isHovered ? { heartStyle } : ''}`}
                 fill="lightcoral"
                 title="One of my favorite projects"
-                onMouseEnter={handleMouseEnter}
-                onMouseLeave={handleMouseLeave}
               />
             )}
           </div>
